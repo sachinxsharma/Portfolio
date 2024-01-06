@@ -7,7 +7,7 @@ import WorkData from "./WorkData";
 const Work = () => {
   return (
     <div className="work-container">
-      <h1 className="project-heading">Projects</h1>
+      <h1 className="project-heading">Projects & Study Works</h1>
       <div className="project-container">
        {WorkData.map((val,ind)=>{
         return(

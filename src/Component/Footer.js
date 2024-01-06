@@ -4,6 +4,20 @@ import {FaGithub, FaHome, FaInstagram, FaLinkedin, FaMailBulk} from "react-icons
 import {FaPhone} from "react-icons/fa"
 // import {FaMailBulk} from "react-icons/fa"
 
+const linkdinprofileURL = "https://www.linkedin.com/in/sachin-sharma-145546254/";
+const githubprofileURL = "https://github.com/sachinxsharma";
+const InstagramURL = "https://www.instagram.com/sachinnn_72?igsh=Z3FrenoydnY0M2Nt";
+const handleLinkedInClick = () =>{
+    window.location.href = linkdinprofileURL;
+};
+const handlegithubInClick = () =>{
+    window.location.href = githubprofileURL;
+}
+const handleInstaClick = () =>{
+    window.location.href = InstagramURL;
+}
+
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -28,9 +42,16 @@ const Footer = () => {
                 <h4>About Me </h4>
                 <p>professional with a strong foundation in  HTML, CSS, React.js and Java(frontend development). Proficient in data structures and algorithms, and pursuing a BSC/IT Degree from Somaiya VidyaVihar University to further enhance my technical skills and knowledge. Committed to continuously improving and staying up-to-date with emerging technologies.</p>
                 <div className="social">
-                <FaLinkedin size ={20} style = {{ color:"#fff", marginRight:"2rem" }}/>  
+                <a href={linkdinprofileURL} target="_blank" rel="noopener noreferrer" onClick={handleLinkedInClick}>
+                <FaLinkedin size ={20} style = {{ color:"#fff", marginRight:"2rem" }}/> 
+                </a>
+
+                <a href={githubprofileURL} target="_blank" rel="noopener noreferrer" onClick={handlegithubInClick}>
                 <FaGithub size ={20} style = {{ color:"#fff", marginRight:"2rem" }}/>
+                </a>
+                <a href={InstagramURL} target="_blank" rel="noopener noreferrer" onClick={handleInstaClick}>
                 <FaInstagram size ={20} style = {{ color:"#fff", marginRight:"2rem" }}/>
+                </a>
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import "./HeroImageStyles.css";
 import introImg from "../assets/intro-bg.jpg"
 import { Link } from "react-router-dom";
+// import Project from '../routes/Project';
 
 const HeroImage = () => {
   return (
