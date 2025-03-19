@@ -1,6 +1,7 @@
 import clone from "../assets/clone.png"
 import clone1 from "../assets/project1.jpg";
 import clone2 from "../assets/project2.jpg";
+import image3 from "../assets/devops.jpg"
 const ProjectData=[
     {
         imgsrc:clone,
@@ -20,6 +21,12 @@ const ProjectData=[
         text:"Laila is a virtual Machine assiatant developed suing python whicbh works on speech reconginiztion #task like oepn google , stackoverflow , yt, playSong n alll",
         view:"https://github.com/sachinxsharma/Laila.git"
     },
+    {
+        imgsrc:image3,
+        title:"DevOps Learning",
+        text:"Hi! I've recently started my journey into DevOps, and I'll be sharing my experiences, insights, and learnings along the way. Whether you're a beginner like me or have some questions, feel free to reach out—I'm here to help",
+        view:"https://s72tech.hashnode.dev/"
+    }
 
 ];
 export default ProjectData;
